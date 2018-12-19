@@ -91,9 +91,9 @@ G.add(keras.layers.Activation("sigmoid"))
 GAN = keras.models.Sequential()
 GAN.add(G)
 GAN.add(D)
-G.compile(loss="binary_crossentropy", optimizer=keras.optimizers.Adam(lr=1e-4))
-D.compile(loss="binary_crossentropy", optimizer=keras.optimizers.Adam(lr=1e-3))
-GAN.compile(loss="binary_crossentropy", optimizer=keras.optimizers.Adam(lr=1e-4))
+G.compile(loss="binary_crossentropy", optimizer=keras.optimizers.Adam(lr=1e-5))
+D.compile(loss="binary_crossentropy", optimizer=keras.optimizers.Adam(lr=1e-4))
+GAN.compile(loss="binary_crossentropy", optimizer=keras.optimizers.Adam(lr=1e-5))
 
 
 # data
